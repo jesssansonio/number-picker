@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de Números</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    </head>
+<body> 
+    <header>
+        <img src="./assets/logo.png" alt="Logo."> 
+    </header>
+
+    <main>
+        <div class="info">
+            <h5>Online - gratuito</h5>
+            <h1>Sorteador <br> de números</h1>
+
+            <div class="questions">
+                <h3>Como funciona o sorteador de números?</h3>
+                <p class="paragraph-response">O sorteador utiliza um algoritmo de geração aleatória para criar <br> números dentro do intervalo especificado pelo usuário.</p>
+
+                <h3>Posso escolher o intervalo dos números?</h3>
+                <p class="paragraph-response">Sim, você pode definir os valores mínimo e máximo para o <br> intervalo dos números sorteados.</p>
+            </div>
+        </div>
+
+       <div class="picker-area">
+            <h2>Quero sortear:</h2>
+            <p class="paragraph-info">defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
+
+            <div class="inputs-area">
+                <div class="inputs">
+                    <label for="quantity" class="label-numbers">números</label>
+                    <div class="style-inputs">
+                        <input class="numbers"  id="quantity" name="quantity" type="number">
+                    </div>
+                </div>
+                <div class="inputs"> 
+                    <label for= "min" class="label-numbers">de</label>
+                    <div class="style-inputs">
+                        <input id="min"  name="min" class="numbers" type="number">
+                    </div>
+                </div>
+                <div class="inputs">
+                    <label for="max" class="label-numbers">até</label>
+                    <div class="style-inputs">
+                        <input id="max"  name="max" class="numbers" type="number">
+                    </div>
+                </div>
+            </div>
+
+            <div id="container-toggle">
+                <div>
+                <input type="checkbox" id="check">
+                <label for="check" class="button-toggle">
+                    <span class="slider"></span>
+                </label>
+                </div>
+
+                <h4>Não repetir número</h4>
+            </div>
+
+            <div class="generate">
+            <button type="submit" id="rafle">Sortear </button>
+            </div>
+         
+        </div>
+
+        </div>
+
+    
+
+        <div class="outcome-numbers">
+            <h6>Resultado do sorteio</h6>
+            <p>1º resultado</p>
+
+            <form class = "drawn-numbers">
+                <div class="animation-numbers">
+                <span class ="first-number" >28</span>
+                </div>
+
+                <div class="animation-numbers">
+                <span class ="second-number" >12</span>
+                </div>
+
+            </form>
+
+            <div id="button-again">
+            <a href="" class="button-again">Sortear novamente</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
